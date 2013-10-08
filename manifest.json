@@ -1,0 +1,30 @@
+{
+	"name": "Will",
+	"version": "1.0",
+	"description": "My first Chrome extension.",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"popup": 'popup-tooltip.html',
+	},
+	"app": {
+		"urls": [
+			"*://mail.google.com/mail/",
+			"*://www.google.com/mail/"
+		],
+		"launch": {
+			"web_url": "http://mail.google.com/mail/"
+		}
+	},
+	"icons": {
+		"128": "icon_128.png",
+		"32": "resources/img/shipx32.png"
+	},
+	"options_page": "options.html",
+	"permissions": [
+		"notifications",
+		"background",
+		"clipboardRead",
+		"clipboardWrite",
+		"unlimitedStorage"
+	],
+}
